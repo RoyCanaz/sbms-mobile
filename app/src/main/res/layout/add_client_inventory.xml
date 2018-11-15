@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_add_inventory_client_name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+            <TextView
+                android:textStyle="bold"
+                android:text="Add Inventory"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textColor="@color/colorLight"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/brand_spinner_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/inventory_categories"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/input_layout_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_model"
+                android:singleLine="true"
+                android:inputType="textUri"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_power_input_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inventory_model" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/input_layout_toner_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_toner_type"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_power_input_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inventory_toner_type" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/input_layout_description_inve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_description_inventory"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_pen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_description_inventory" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/input_layout_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_quantity"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inventory_quantity" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inventory_need_maintanance"
+            android:textColor="@color/colorLight"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/inventory_spinner_need_mantain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/yes_no"
+            />
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/saveInventory"
+                android:drawableLeft="@drawable/ic_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyleprimary"
+                android:text="Save"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

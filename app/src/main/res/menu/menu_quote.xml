@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_send_blue"
+        android:id="@+id/quote_send"
+        android:title="Send Again" />
+    <item
+        android:icon="@drawable/ic_pen"
+        android:id="@+id/quote_edit"
+        android:title="Edit" />
+</menu>

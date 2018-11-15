@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_root_client_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_of_client"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_marginTop="10dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_profile"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_contacts"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_contacts"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_inventory"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_inventory"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_notes"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_notes"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_quotes"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_quotes"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_invoice"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_invoice"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/btn_summary"
+            android:layout_marginTop="20dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyleprimary"
+            android:text="@string/btn_client_summary"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="5dp"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:drawableStart="@drawable/ic_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="5dp"
+                android:id="@+id/product_brand"
+
+                app:hintText="@string/inventory_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="0dp"
+            app:errorTextAppearance="@style/AppTheme.TextInputLayout"
+            android:id="@+id/pro_layout_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_model"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_model" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:drawableStart="@drawable/ic_warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="5dp"
+                android:id="@+id/product_monthyear"
+                app:hintText="@string/string_pro_monthyear"
+                android:entries="@array/monthyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/input_pro_warranty"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_warranty" />
+
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="0dp"
+            android:id="@+id/pro_layout_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:ems="20"
+                android:id="@+id/input_pro_description"
+                android:inputType="textMultiLine"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_pen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_description" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_os"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                app:hintText="@string/string_pro_os"
+                android:layout_marginTop="5dp"
+                android:id="@+id/product_os"
+                android:entries="@array/os"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_processor"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                app:hintText="@string/string_pro_processor"
+                android:layout_marginTop="5dp"
+                android:id="@+id/product_processor"
+                android:entries="@array/processor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_memory"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                app:hintText="@string/string_pro_memory"
+                android:layout_marginTop="5dp"
+                android:id="@+id/product_memory"
+                android:entries="@array/memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_harddrive"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="5dp"
+                app:hintText="@string/string_pro_harddrive"
+                android:id="@+id/product_harddrive"
+                android:entries="@array/harddrive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+            <com.thomashaertel.widget.MultiSpinner
+                android:layout_marginTop="12dp"
+                android:id="@+id/suppliers"
+                android:drawablePadding="15dp"
+                android:drawableStart="@drawable/ic_car"
+                android:textSize="17sp"
+                android:text="Select Suppliers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/input_pro_display"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_display" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_landing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_landingcost"
+                android:singleLine="true"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_landing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_landing" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_quantity"
+            app:errorTextAppearance="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_quantity"
+                android:singleLine="true"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_quantity" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_selling"
+            app:errorTextAppearance="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_selling"
+                android:singleLine="true"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_dollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_sellingprice" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_reorderL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_reorderL"
+                android:singleLine="true"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_pro_reorderlevel" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pro_layout_reorderQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/input_pro_reorderQ"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="@string/string_pro_reorderquantity" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_add"/>
+
+    </LinearLayout>
+
+</ScrollView>
